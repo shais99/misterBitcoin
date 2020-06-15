@@ -1,8 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-
-
+import { HashLocationStrategy, LocationStrategy } from '@angular/common'
 import { GoogleChartsModule } from 'angular-google-charts';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -38,7 +37,7 @@ import { UserBarComponent } from './cmps/user-bar/user-bar.component';
     SignupPageComponent,
     TransferFundComponent,
     MovesListComponent,
-    UserBarComponent
+    UserBarComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,7 +45,7 @@ import { UserBarComponent } from './cmps/user-bar/user-bar.component';
     GoogleChartsModule,
     FormsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [{ provide: LocationStrategy, useClass: HashLocationStrategy }],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
