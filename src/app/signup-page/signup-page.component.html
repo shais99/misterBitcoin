@@ -1,0 +1,10 @@
+<div class="hero-container">
+    <form (ngSubmit)="onSignup()" class="signup-form flex column align-center">
+        <h2 class="signup-title">Signup:</h2>
+        <div>
+            <input type="text" autocomplete="off" [(ngModel)]="name" name="name" placeholder="Username"
+                class="user-input input" />
+            <button class="btn primary">Signup</button>
+        </div>
+    </form>
+</div>

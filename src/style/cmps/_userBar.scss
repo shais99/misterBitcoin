@@ -1,0 +1,11 @@
+.user-bar-container {
+    background-color: darken($clr1, 8);
+    padding: 10px;
+    font-size: rem(14px);
+}
+
+@media(max-width: 400px) {
+    .user-bar-container {
+        padding: 10px 0;
+    }
+}

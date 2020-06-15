@@ -1,0 +1,7 @@
+<div class="user-bar-container">
+    <div class="container flex even">
+        <span class="user-greet" *ngIf="user && user.name">Hello {{user.name}}, Coins: {{user.coins}}</span>
+        <span class="btc-rate" *ngIf="user && user.name">BTC Rate: {{bitcoinRate}}</span>
+        <span class="guest-green" *ngIf="user && !user.name">Hello Guest</span>
+    </div>
+</div>

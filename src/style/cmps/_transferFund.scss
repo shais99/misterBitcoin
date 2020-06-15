@@ -1,0 +1,16 @@
+.transfer-fund-container {
+    background-color: rgba($clr6, 0.1);
+    padding: 12px;
+    
+    .title {
+        font-size: rem(18px);
+    }
+
+    & *:not(:last-child) {
+        margin-bottom: 10px;
+    }
+
+    .input {
+        margin-right: 22px;
+    }
+}
